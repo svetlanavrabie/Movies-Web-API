@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,8 @@ namespace MoviesAPI
     {
         public static void Main(string[] args)
         {
+            ThreadPool.SetMaxThreads(Environment.ProcessorCount, Environment.ProcessorCount);
+            
             var host= CreateHostBuilder(args).Build();
 
             // migrate the database.  Best practice = in Main, using service scope

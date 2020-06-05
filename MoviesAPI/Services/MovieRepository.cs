@@ -24,6 +24,7 @@ namespace MoviesAPI.Services
 
         public async Task<IEnumerable<Movie>> GetMoviesAsyncr()
         {
+            await _context.Database.ExecuteSqlRawAsync("WAITFOR DELAY '00:00:02'");
             return await _context.Movies.Include(d=>d.Director).ToListAsync();
         }
 

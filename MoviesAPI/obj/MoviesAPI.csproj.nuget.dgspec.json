@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\MesCours\\Net.Core\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {}
+    "G:\\MesCours\\Net.Core\\GitRepository\\Movies-Web-API\\MoviesAPI\\MoviesAPI.csproj": {}
   },
   "projects": {
-    "G:\\MesCours\\Net.Core\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {
+    "G:\\MesCours\\Net.Core\\GitRepository\\Movies-Web-API\\MoviesAPI\\MoviesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\MesCours\\Net.Core\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+        "projectUniqueName": "G:\\MesCours\\Net.Core\\GitRepository\\Movies-Web-API\\MoviesAPI\\MoviesAPI.csproj",
         "projectName": "MoviesAPI",
-        "projectPath": "G:\\MesCours\\Net.Core\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+        "projectPath": "G:\\MesCours\\Net.Core\\GitRepository\\Movies-Web-API\\MoviesAPI\\MoviesAPI.csproj",
         "packagesPath": "C:\\Users\\laurash\\.nuget\\packages\\",
-        "outputPath": "G:\\MesCours\\Net.Core\\MoviesAPI\\MoviesAPI\\obj\\",
+        "outputPath": "G:\\MesCours\\Net.Core\\GitRepository\\Movies-Web-API\\MoviesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0-preview.4.20220.10, )"
@@ -56,6 +60,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0-preview.4.20220.10, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
             }
           },
           "imports": [
