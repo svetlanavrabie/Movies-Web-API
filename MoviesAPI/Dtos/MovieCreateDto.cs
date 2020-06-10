@@ -2,9 +2,9 @@
 
 namespace MoviesAPI.Dtos
 {
-    public class MovieDto
+    public class MovieCreateDto
     {
-        public Guid Id { get; set; }
+        public Guid DirectorId { get; set; }
 
         public string Title { get; set; }
 

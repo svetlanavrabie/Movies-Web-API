@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using MoviesAPI.Dtos;
+using MoviesAPI.Entities;
 using MoviesAPI.Filters;
 using MoviesAPI.Services;
 using System;
@@ -13,9 +16,13 @@ namespace MoviesAPI.Controllers
     {
         private readonly IMovieRepository _movieRepository;
 
-        public MoviesController(IMovieRepository movieRepository)
+        private readonly IMapper _mapper;
+
+        public MoviesController(IMovieRepository movieRepository, IMapper mapper)
         {
             _movieRepository = movieRepository ?? throw new ArgumentNullException(nameof(movieRepository));
+
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
         [HttpGet]
@@ -27,7 +34,7 @@ namespace MoviesAPI.Controllers
             return Ok(movies);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "GetMovie")]
         [MovieResultFilter]
         public async Task<IActionResult> GetMovie(Guid id)
         {
@@ -39,6 +46,21 @@ namespace MoviesAPI.Controllers
             }
 
             return Ok(movie);
+        }
+
+        [HttpPost]
+        [MovieResultFilter]
+        public async Task<IActionResult> CreateMovie(MovieCreateDto movieCreateDto)
+        {
+            var movie = _mapper.Map<Movie>(movieCreateDto);
+
+           _movieRepository.CreateMovie(movie);
+
+            await _movieRepository.SaveChangesAsync();
+
+            await _movieRepository.GetMovieAsyncr(movie.Id);
+
+            return CreatedAtRoute("GetMovie", new { id=movie.Id}, movie);
         }
     }
 }

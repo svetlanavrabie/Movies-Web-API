@@ -11,6 +11,8 @@ namespace MoviesAPI.Profiles
         {
             CreateMap<Movie, MovieDto>().ForMember(dest => dest.Director,
                 opt => opt.MapFrom(src => $"{src.Director.FirstName} {src.Director.LastName}"));
+
+            CreateMap<MovieCreateDto, Movie>();
         }
     }
 }
