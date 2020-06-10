@@ -25,7 +25,26 @@ namespace MoviesAPI.Services
         public async Task<IEnumerable<Movie>> GetMoviesAsyncr()
         {
             await _context.Database.ExecuteSqlRawAsync("WAITFOR DELAY '00:00:02'");
-            return await _context.Movies.Include(d=>d.Director).ToListAsync();
+            return await _context.Movies.Include(d => d.Director).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Movie>> GetMoviesAsyncr(IEnumerable<Guid> movieIds)
+        {
+            return await _context.Movies.Where(m => movieIds.Contains(m.Id)).Include(m => m.Director).ToListAsync();
+        }
+
+        public void CreateMovie(Movie movietoCreate)
+        {
+            if (movietoCreate == null)
+            {
+                throw new ArgumentNullException(nameof(movietoCreate));
+            }
+            _context.Add(movietoCreate);
+        }
+
+        public async Task<bool> SaveChangesAsync()
+        {
+            return (await _context.SaveChangesAsync() > 0);
         }
 
         public void Dispose()
@@ -38,7 +57,7 @@ namespace MoviesAPI.Services
         {
             if (disposing)
             {
-                if (_context !=null)
+                if (_context != null)
                 {
                     _context.Dispose();
                     _context = null;

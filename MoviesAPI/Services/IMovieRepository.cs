@@ -7,8 +7,14 @@ namespace MoviesAPI.Services
 {
     public interface IMovieRepository
     {
-        Task<IEnumerable<Movie>> GetMoviesAsyncr();
+        public Task<IEnumerable<Movie>> GetMoviesAsyncr();
 
-        Task<Movie> GetMovieAsyncr(Guid id);
+        public Task<IEnumerable<Movie>> GetMoviesAsyncr(IEnumerable<Guid> movieIds);
+
+        public Task<Movie> GetMovieAsyncr(Guid id);
+
+        public void CreateMovie(Movie movietoCreate);
+
+        public Task<bool> SaveChangesAsync();
     }
 }

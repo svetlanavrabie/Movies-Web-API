@@ -58,6 +58,10 @@ G:\MesCours\Net.Core\MoviesAPI\MoviesAPI\obj\Debug\netcoreapp3.1\staticwebassets
 G:\MesCours\Net.Core\MoviesAPI\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.dll
 G:\MesCours\Net.Core\MoviesAPI\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.pdb
 G:\MesCours\Net.Core\MoviesAPI\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.genruntimeconfig.cache
+G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.csproj.CoreCompileInputs.cache
+G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.MvcApplicationPartsAssemblyInfo.cache
+G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.AssemblyInfoInputs.cache
+G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.AssemblyInfo.cs
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\appsettings.json
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -67,6 +71,8 @@ G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\MoviesAPI.runtimeconfig.dev.json
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\MoviesAPI.dll
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\MoviesAPI.pdb
+G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
@@ -179,8 +185,7 @@ G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.AssemblyInfoInputs.cache
-G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.AssemblyInfo.cs
+G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.csprojAssemblyReference.cache
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.RazorTargetAssemblyInfo.cache
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.csproj.CopyComplete
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\staticwebassets\MoviesAPI.StaticWebAssets.Manifest.cache
@@ -188,7 +193,3 @@ G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.dll
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.pdb
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.genruntimeconfig.cache
-G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
-G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.csproj.CoreCompileInputs.cache
-G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.MvcApplicationPartsAssemblyInfo.cache
