@@ -42,6 +42,24 @@ namespace MoviesAPI.Services
             _context.Add(movietoCreate);
         }
 
+        public Movie UpdateMovie(Movie movietoUpdate)
+        {
+            if (movietoUpdate == null)
+            {
+                throw new ArgumentNullException(nameof(movietoUpdate));
+            }
+            _context.Update(movietoUpdate);
+
+            return movietoUpdate;
+        }
+
+        public void DeleteMovie(Guid movieId)
+        {
+            var movie = _context.Movies.Find(movieId);
+
+            _context.Remove(movie);
+        }
+
         public async Task<bool> SaveChangesAsync()
         {
             return (await _context.SaveChangesAsync() > 0);

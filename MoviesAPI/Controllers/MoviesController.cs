@@ -62,5 +62,49 @@ namespace MoviesAPI.Controllers
 
             return CreatedAtRoute("GetMovie", new { id=movie.Id}, movie);
         }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateMovie([FromBody] MovieUpdateDto updateMovie)
+        {
+            var movie = await _movieRepository.GetMovieAsyncr(updateMovie.Id);
+
+            if (movie == null)
+            {
+                return BadRequest();
+            }
+
+            movie.Title = updateMovie.Title;
+
+            movie.Category = updateMovie.Category;
+
+            movie.Description = updateMovie.Description;
+
+            var movieToUpdate = _movieRepository.UpdateMovie(movie);
+
+            if (movieToUpdate == null)
+            {
+                return BadRequest("Impossible to update a movie!");
+            }
+
+            await _movieRepository.SaveChangesAsync();
+
+            return Ok(_mapper.Map<MovieDto>(movieToUpdate));
+        }
+
+
+        [HttpDelete("{movieId}")]
+        public async Task<IActionResult> DeleteMovie(Guid movieId)
+        {
+            if (movieId == null)
+            {
+                return NotFound();
+            }
+
+            _movieRepository.DeleteMovie(movieId);
+
+            await _movieRepository.SaveChangesAsync();
+
+            return NoContent();
+        }
     }
 }
