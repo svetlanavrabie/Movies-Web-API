@@ -15,6 +15,10 @@ namespace MoviesAPI.Services
 
         public void CreateMovie(Movie movietoCreate);
 
+        public Movie UpdateMovie(Movie movietoUpdate);
+
+        public void DeleteMovie(Guid movieId);
+
         public Task<bool> SaveChangesAsync();
     }
 }

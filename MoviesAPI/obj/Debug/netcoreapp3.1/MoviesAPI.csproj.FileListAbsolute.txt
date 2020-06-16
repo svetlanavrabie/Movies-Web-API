@@ -185,7 +185,6 @@ G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.csprojAssemblyReference.cache
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.RazorTargetAssemblyInfo.cache
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\MoviesAPI.csproj.CopyComplete
 G:\MesCours\Net.Core\GitRepository\Movies-Web-API\MoviesAPI\obj\Debug\netcoreapp3.1\staticwebassets\MoviesAPI.StaticWebAssets.Manifest.cache
